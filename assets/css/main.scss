@@ -7,3 +7,31 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+// .layout--home  .archive {
+//   padding-right: 300px;   /* 调整页面文字离右边的距离 默认300px */
+// }
+
+.layout--home  .archive__subtitle {
+  display: none;  /* 删除Recent Posts */
+}
+
+.sidebar.sticky {
+  opacity: 1 !important;          /* 确保不透明度为 1，使其常亮 */
+}
+
+.u-photo {
+  border: none !important;   /* 去除边框 */
+//   border-radius: 0.5 !important;
+}
+
+p {
+    font-size: 19px; /* 修改为希望的大小 */
+    margin-top: 15px;    /* 设置段落上边距为10px */
+    margin-bottom: 15px; /* 设置段落下边距为10px */
+}
+li{
+    font-size: 19px; /* 修改为希望的大小 */
+    margin-top: 15px;    /* 设置段落上边距为10px */
+    margin-bottom: 15px; /* 设置段落下边距为10px */
+}
